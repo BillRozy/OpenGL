@@ -35,4 +35,20 @@ public class OpenGLActivity extends AppCompatActivity {
         }
         setContentView(glSurfaceView);
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (rendererSet) {
+            glSurfaceView.onResume();
+        }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (rendererSet) {
+            glSurfaceView.onResume();
+        }
+    }
 }
