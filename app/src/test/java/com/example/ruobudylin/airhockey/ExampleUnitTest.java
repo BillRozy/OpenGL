@@ -1,4 +1,4 @@
-package com.example.ruobudylin.opengl;
+package com.example.ruobudylin.airhockey;
 
 import org.junit.Test;
 
